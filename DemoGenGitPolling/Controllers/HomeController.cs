@@ -21,7 +21,7 @@ namespace DemoGenGitPolling.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-            string contact = System.IO.File.ReadAllText(Server.MapPath("~") + @"\Template\Contact.json");
+            string contact = System.IO.File.ReadAllText(Server.MapPath("~") + @"\GitPolling\DemoGenGitPolling\Template\Contact.json");
             if (contact != "")
             {
                 JObject obj = new JObject();
